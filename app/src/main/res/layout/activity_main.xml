@@ -17,31 +17,53 @@
         android:ems="10"
         android:id="@+id/editTextRating" />
 
+    <TextView
+        android:text="Please enter your comment:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextComment" />
+
     <LinearLayout
         android:id="@+id/group"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <Button
             android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add New"
+            android:text="Add My Comment"
             android:onClick="onClick"/>
-
         <Button
-            android:id="@+id/delete"
-            android:layout_width="wrap_content"
+            android:text="Clear Input"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delete First"
+            android:id="@+id/buttonClear"
             android:onClick="onClick"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete First COmment"
+        android:onClick="onClick" />
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        >
+
+
+    </ListView>
 
 </LinearLayout>
